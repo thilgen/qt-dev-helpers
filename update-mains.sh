@@ -18,6 +18,7 @@ for quickture_dir in "${quickture_dirs[@]}"; do
     echo "Updating main: $quickture_dir"
     cd "$quickture_dir"
     git checkout main
+    git fetch origin
     git pull
     echo
     cd ..
